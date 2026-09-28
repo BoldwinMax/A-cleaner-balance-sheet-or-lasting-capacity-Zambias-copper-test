@@ -18,18 +18,7 @@ The tailwind is real. The question is whether the decisions being made right now
 
 ---
 
-## Repository Contents
 
-| File | Description |
-|---|---|
-| `Zambia_Copper_Test_Policy_Brief_Mweemba_2026.pdf` | Full policy brief (5 pages) |
-| `zambia_copper_linkedin.tex` | LaTeX source |
-| `figures/gen_fig1.py` | Figure 1 — copper-to-currency transmission chain |
-| `figures/gen_fig2.py` | Figure 2 — energy constraint (Kariba + load shedding) |
-| `figures/gen_fig3_v2.py` | Figure 3 — tax revenue concentration |
-| `figures/fig1_transmission.png` | Rendered figure 1 |
-| `figures/fig2_energy_v2.png` | Rendered figure 2 |
-| `figures/fig3_tax_v2.png` | Rendered figure 3 |
 
 ---
 
@@ -48,10 +37,10 @@ The tailwind is real. The question is whether the decisions being made right now
 This brief draws on five independent portfolio projects:
 
 - **Kwacha drivers** — FX reserve decomposition and copper transmission chain
-- **Eurobond recovery** — two-stage debt restructuring analysis
+- **Eurobond recovery** —  restructuring analysis
 - **Energy constraint** — Kariba reservoir, load shedding, and mine power consumption
 - **Tax concentration** — ZRA revenue base analysis (6 independent cuts)
-- **FDI and mineral rents** — post-restructuring investment surge
+
 
 All projects, data, and interactive dashboards: [github.com/BoldwinMax](https://github.com/BoldwinMax)
 
