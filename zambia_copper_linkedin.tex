@@ -1,0 +1,336 @@
+\documentclass[11pt,a4paper]{article}
+
+% ── packages ─────────────────────────────────────────────────────────────────
+\usepackage[top=2.2cm,bottom=2.5cm,left=2.8cm,right=2.8cm]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+%\usepackage{microtype}
+\usepackage{xcolor}
+\usepackage{graphicx}
+\usepackage{tcolorbox}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{parskip}
+\usepackage{booktabs}
+\usepackage{hyperref}
+\usepackage{lastpage}
+\usepackage{fancyhdr}
+\usepackage[hang,flushmargin]{footmisc}
+
+\tcbuselibrary{skins,breakable}
+
+% ── colour palette ────────────────────────────────────────────────────────────
+\definecolor{NavyBlue}{HTML}{1A4E7A}
+\definecolor{Amber}{HTML}{F2A60D}
+\definecolor{MidBlue}{HTML}{2E7BB8}
+\definecolor{GridGray}{HTML}{E8EDF2}
+\definecolor{LabelDark}{HTML}{2C3E50}
+\definecolor{LightAmber}{HTML}{FFF8E1}
+\definecolor{LightBlue}{HTML}{EAF0F6}
+\definecolor{BodyText}{HTML}{2C3E50}
+\definecolor{SubText}{HTML}{5D6D7E}
+
+% ── hyperref ─────────────────────────────────────────────────────────────────
+\hypersetup{
+  colorlinks=true,
+  urlcolor=MidBlue,
+  linkcolor=NavyBlue,
+  citecolor=NavyBlue,
+  pdfauthor={Boldwin Mweemba},
+  pdftitle={A Cleaner Balance Sheet, or Lasting Capacity? Zambia's Copper Test},
+}
+
+% ── section headings with coloured rule ──────────────────────────────────────
+\titleformat{\section}[block]
+  {\large\bfseries\color{NavyBlue}}
+  {}{0pt}
+  {}
+  [\vspace{2pt}\color{Amber}\hrule height 2pt\vspace{4pt}]
+
+\titlespacing{\section}{0pt}{18pt}{8pt}
+
+\titleformat{\subsection}[block]
+  {\normalsize\bfseries\color{LabelDark}}
+  {}{0pt}{}
+\titlespacing{\subsection}{0pt}{12pt}{4pt}
+
+% ── body text ─────────────────────────────────────────────────────────────────
+\color{BodyText}
+\setlength{\parskip}{7pt}
+\setlength{\parindent}{0pt}
+\renewcommand{\baselinestretch}{1.18}
+
+% ── header / footer ──────────────────────────────────────────────────────────
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0.4pt}
+\fancyfoot[C]{\small\color{SubText}%
+  Boldwin Mweemba \textbullet{} Policy Brief \textbullet{} September 2026
+  \hfill Page \thepage\ of \pageref{LastPage}}
+
+% ── tcolorbox styles ─────────────────────────────────────────────────────────
+\tcbset{
+  keyfindingsbox/.style={
+    enhanced,
+    breakable,
+    colback=LightBlue,
+    colframe=NavyBlue,
+    arc=4pt,
+    left=10pt, right=10pt, top=8pt, bottom=8pt,
+    boxrule=1.4pt,
+    fonttitle=\bfseries\color{white},
+    title={Summary},
+    attach boxed title to top left={yshift=-2mm, xshift=6mm},
+    boxed title style={colback=NavyBlue, arc=3pt},
+    coltitle=white,
+  },
+  calloutbox/.style={
+    enhanced,
+    colback=LightAmber,
+    colframe=Amber,
+    arc=4pt,
+    left=8pt, right=8pt, top=6pt, bottom=6pt,
+    boxrule=1pt,
+  },
+}
+
+% ─────────────────────────────────────────────────────────────────────────────
+\begin{document}
+\thispagestyle{fancy}
+
+% ── TITLE BLOCK ──────────────────────────────────────────────────────────────
+\begin{center}
+
+{\fontsize{22}{27}\selectfont\bfseries\color{NavyBlue}
+A Cleaner Balance Sheet, or Lasting Capacity?\\[4pt]
+Zambia's Copper Test}
+
+\vspace{10pt}
+\color{Amber}\hrule height 2.5pt
+\vspace{10pt}
+
+{\large\color{LabelDark}
+\textbf{Boldwin Mweemba}}\\[3pt]
+{\normalsize\color{SubText}
+Independent Analyst, Data Analytics and Economic Research, Lusaka, Zambia\\
+\href{mailto:boldwin@aims.edu.gh}{boldwin@aims.edu.gh}
+\quad\textbullet\quad September 2026\\[4pt]
+{\small\color{SubText}\textit{This piece consolidates a set of independent
+analytical projects on Zambia's economy available at
+\href{https://github.com/BoldwinMax}{github.com/BoldwinMax}.}}}
+
+\end{center}
+
+\vspace{14pt}
+
+% ── KEY FINDINGS BOX ─────────────────────────────────────────────────────────
+\begin{tcolorbox}[keyfindingsbox]
+\begin{itemize}[leftmargin=14pt, itemsep=4pt, topsep=2pt]
+  \item Copper has broken \$13,000 per tonne. The Kwacha has appreciated
+        32\% since December 2024. Mineral rents have climbed from 3\% to
+        nearly 28\% of GDP. The recovery is real and the data confirms it.
+  \item The 2020 Eurobond default and its June 2024 restructuring collapsed
+        debt service to exports from a 12.5\% peak to under 3\%. That
+        improvement is structural, not just cyclical.
+  \item Energy is the constraint copper prices cannot relax: the mining
+        sector consumed 10.6\% less electricity in 2024 alone, during a
+        hydrological crisis that pushed Lake Kariba to 10\% capacity.
+  \item Revenue is concentrated dangerously: large taxpayers carry 79\% of
+        the domestic tax base; one mine (Kansanshi) contributed roughly a
+        third of the entire mining sector's government payments in 2023.
+  \item The window to convert this boom into lasting capacity is now, while
+        the tailwind is still blowing. Energy, tax diversification, and
+        export logistics are the three policy levers that will decide the
+        outcome.
+\end{itemize}
+\end{tcolorbox}
+
+\vspace{10pt}
+
+% ── INTRODUCTION ─────────────────────────────────────────────────────────────
+\section{Introduction}
+
+Zambia's economy has been on a run. Copper broke \$13,000 a tonne. The
+Kwacha appreciated 32\% between December 2024 and May 2026. Mineral rents
+climbed from 3\% of GDP in 2020 to nearly 28\% by 2024. Foreign direct
+investment surged past 9\% of GDP once the Eurobond restructuring closed.
+Debt service to exports, which peaked at 12.5\% in 2019, has fallen under 3\%.
+
+By almost every headline number, the recovery is real. The question this
+piece asks is not whether copper is delivering; the data confirms it is.
+The question is whether Zambia is converting that tailwind into lasting
+capacity, or simply building a cleaner balance sheet ahead of the next
+stress test.
+
+Three things will decide which one it turns out to be: energy reliability,
+tax predictability, and export logistics. Copper gives Zambia the
+opportunity. Policy determines whether the opportunity becomes
+transformation.
+
+% ── FIGURE 1 ─────────────────────────────────────────────────────────────────
+\begin{center}
+\includegraphics[width=\linewidth]{fig1_transmission.png}
+\end{center}
+{\small\color{SubText}
+\textbf{Figure 1.} The copper to currency transmission chain. Export
+earnings growth drives FX reserve accumulation, which in turn supports
+Kwacha appreciation and expands fiscal revenue. Key figures at each stage:
+\$13,000/tonne copper price; Kwacha appreciation of 32\% (December 2024 to
+May 2026); mineral rents rising from 3\% to 28\% of GDP.}
+
+\vspace{6pt}
+
+% ── RESULTS ──────────────────────────────────────────────────────────────────
+\section{What the Data Confirms}
+
+The transmission chain from copper to currency is observable and consistent
+with the mechanism you would expect: as copper prices rose past
+\$13,000 per tonne, export earnings followed, reserves built, and the
+Kwacha appreciated in the same window. Foreign exchange reserves alone
+explain roughly half of the Kwacha's movements historically, which is more
+than copper prices do directly and is itself a useful reminder that the
+currency's stability runs through the central bank's reserve position, not
+commodity prices alone.
+
+The recovery from the 2020 Eurobond default tells a similar two stage
+story. Copper prices nearly doubled between 2020 and 2022, and mineral
+rents rose from 3\% to 28\% of GDP before the formal debt restructuring
+was finalised. The G20 Common Framework and the June 2024 Eurobond
+restructuring then locked in the second stage, collapsing debt service
+to exports from 12.5\% to under 3\%. Neither stage tells the full story
+alone: without copper, the debt deal would have landed on harsher terms;
+without the deal, the copper windfall would have been absorbed by debt
+service instead of building reserves.
+
+% ── ENERGY SECTION ───────────────────────────────────────────────────────────
+\section{The Constraint the Headline Numbers Don't Show}
+
+Copper mining consumes close to 69\% of Zambia's national electricity.
+Reservoir levels at Lake Kariba explain roughly 53\% of the variation in
+load shedding hours, and when the reservoir drops, mine electricity
+consumption does not hold steady. It fell 10.6\% in 2024 alone, during the
+hydrological crisis.
+
+Zambia has set a production target of 3 million tonnes of copper. Getting
+there requires a level of consistent power supply the current generation
+mix (still roughly 85\% hydro) has not reliably delivered in drought
+years. Solar capacity has grown fast, from 88 MW in 2021 to roughly
+841 MW now, and that growth has genuinely reduced Zambia's exposure to a
+poor rainy season. It has not removed that exposure. Solar does not cover
+the evening peak without storage, and hydro still carries most of the load.
+
+The uncomfortable version of this: a country can have record copper prices
+and still fail to capture them fully, if the power to run the mines is not
+there when it is needed.
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=\linewidth]{fig2_energy_v2.png}
+{\small\color{SubText}
+\textbf{Figure 2.} Energy is the binding constraint copper prices do not
+relax. \textbf{Panel A}: Lake Kariba reservoir level (\% full), 2020 to
+2024, showing the drop to 10\% during the 2024 hydrological crisis.
+\textbf{Panel B}: Load shedding hours per day (red bars) and mine
+electricity consumption index (2020\,=\,100), showing the 10.6\% drop in
+mine power use in 2024 even as copper prices climbed.}
+\end{figure}
+
+% ── TAX BASE SECTION ─────────────────────────────────────────────────────────
+\section{The Tax Base Carrying the Weight}
+
+The Zambia Revenue Authority is expected to fund up to 80\% of the national
+budget by 2028. Right now, that revenue rests on a narrow base. Large
+taxpayers alone carry 79\% of domestic tax revenue. Private businesses
+carry 92\% of it. Mining is the largest single contributor, and it also
+received 90\% of every tax incentive approved between 2018 and 2023. In
+2023 alone, for every kwacha mining paid in tax, it received roughly
+8 cents back in incentives. One mine, Kansanshi, paid ZMW 6.3 billion in
+2023, which is close to a third of the entire sector's government
+contribution on its own.
+
+That concentration is efficient to administer. It is not resilient. A
+revenue base this narrow moves with the fortunes of a handful of firms and
+a single commodity cycle, which is a fragile foundation for a target as
+large as funding 80\% of the national budget.
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=0.85\linewidth]{fig3_tax_v2.png}
+{\small\color{SubText}
+\textbf{Figure 3.} Tax revenue is concentrated in a handful of firms and
+one commodity. Large taxpayers carry 79\% of the domestic tax base.
+Private businesses carry 92\%. The Kansanshi callout illustrates how thin
+the diversification is even within the mining sector itself.}
+\end{figure}
+
+% ── DISCUSSION ───────────────────────────────────────────────────────────────
+\section{Opportunity Is Not the Same as Transformation}
+
+None of this is a case for pessimism. Copper is real, and right now it is
+working in Zambia's favour. The reserves have built. The debt terms have
+improved. The recovery is measurable, not narrative.
+
+But a boom converts into lasting capacity only if the constraints around it
+get addressed while the window is open, not after prices turn. Energy
+reliability determines whether the 3 million tonne production target is
+achievable or capped regardless of price. Tax base diversification
+determines whether the ZRA's 80\% by 2028 ambition rests on a foundation
+that can actually hold that weight. Export logistics determine whether the
+earnings copper generates can actually move to market at the pace the boom
+demands.
+
+% ── CONCLUSION ───────────────────────────────────────────────────────────────
+\section{Conclusion}
+
+Copper bought Zambia the opportunity. The question is what Zambia does
+with it, and the answer is almost entirely a function of decisions made
+in the next two to three years, while the commodity tailwind is still
+blowing and the fiscal space it has created still exists. The political
+economy is harder than the economics: tax incentives are easier to grant
+than to renegotiate, grid infrastructure competes with other budget
+priorities, and logistics corridors require regional coordination. But the
+window in which these choices carry the most weight is the one open right
+now, when reserves are building, debt service is low, and the sovereign
+has fiscal room to make long term commitments.
+
+The three structural constraints at the centre of this analysis are not
+abstract concerns. They are the specific bottlenecks that will determine
+whether the 3 million tonne production target is met, whether the ZRA's
+80\% budget contribution ambition survives the next commodity softening,
+and whether the earnings copper generates actually stay in Zambia. The
+copper price environment is favourable in ways that will not persist
+indefinitely. Whether the decisions being made right now still look right
+when the tailwind fades is the question this piece is putting on the table.
+
+% ── REFERENCES ───────────────────────────────────────────────────────────────
+\section{References}
+
+\begin{enumerate}[leftmargin=16pt, itemsep=3pt, label={[\arabic*]}]
+
+\item London Metal Exchange (LME). \textit{Copper Official Cash Settlement
+      Price}. LME, 2024 to 2026.
+
+\item Bank of Zambia (BoZ). \textit{Monthly Exchange Rate Statistics:
+      Zambian Kwacha to US Dollar}. BoZ, Lusaka, 2024 to 2026.
+
+\item World Bank. \textit{World Development Indicators: Mineral Rents,
+      FDI, and GDP Series for Zambia}. Washington DC, 2020 to 2024.
+
+\item International Monetary Fund (IMF). \textit{Zambia: 2024 Article IV
+      Consultation and Request for Extended Credit Facility}.
+      IMF Country Report, Washington DC, 2024.
+
+\item G20 Common Framework for Debt Treatments. \textit{Zambia Debt
+      Treatment Agreement}. Official Communiqué, June 2024.
+
+\item Zambia Revenue Authority (ZRA). \textit{Annual Report and Tax
+      Expenditure Statistics}. ZRA, Lusaka, 2021 to 2023.
+
+\item Energy Regulation Board (ERB), ZESCO, and Zambezi River Authority.
+      \textit{Electricity Generation, Load Shedding, and Kariba Reservoir
+      Level Data}. Lusaka and Harare, 2020 to 2024.
+
+\end{enumerate}
+
+\end{document}
